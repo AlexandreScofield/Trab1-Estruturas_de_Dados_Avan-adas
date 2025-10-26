@@ -2,20 +2,23 @@
 #include <stdlib.h>
 #include "Header.h"
 
-arb* create(int x) {
-	arb* new_arb = (arb*)malloc(sizeof(arb));
-	new_arb->left = new_arb->right = NULL;
-	new_arb->info = x;
-	return new_arb;
+pc* create(char name[], char status[] ) {
+	pc* new_paci = (pc*)malloc(sizeof(pc));
+	new_paci->next = NULL;
+	new_paci->name = name;
+	new_paci->status = status;
+	return new_paci;
 }
-
-arb* insert(int x, arb*root) {
-	arb* aux = create(x);
-	switch (x > root->info) {
+/* 
+pc* insert(char name[], char status[], pc*root) {
+	pc* aux = create(name, status);
+	switch (status == root->status) {
 	case 1:
-		root->right = aux;
+		root->next = aux;
 	case 0:
-		root->left = aux;
+		root-> = aux;
 	default:
 		printf("SAME_NUMBER_ERROR:\nThis value has been used, try another one!");
+	}
 }
+ */
