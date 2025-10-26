@@ -3,6 +3,7 @@
 #include "Header.h"
 
 int main(void) {
-pc* pacient = create("Alexandre","verde");
+
+
 
 }
