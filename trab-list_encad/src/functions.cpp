@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Header.h"
+#include "../include/Header.h"
 
 pc* create(char name[], char status[] ) {
 	pc* new_paci = (pc*)malloc(sizeof(pc));
